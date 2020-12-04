@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  memcached:
+    image: memcached:1.6.8
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - MEMCACHED_HOST=memcached
+    depends_on:
+      - memcached
