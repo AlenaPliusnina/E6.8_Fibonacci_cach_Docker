@@ -1,4 +1,4 @@
-# E6.8_Fibonacci_cach_Docker
+# Fibonacci_cach_Docker
 
 Описание веб-приложения:
 
